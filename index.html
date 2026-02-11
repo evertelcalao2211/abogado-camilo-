@@ -1,0 +1,606 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Bufete Cristian Cano - Abogado Especialista en Derecho Privado</title>
+    <link rel="stylesheet" href="stilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap">
+    <link rel="icon" type="image/x-icon" href="img/logo-icono.ico">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+
+</head>
+<body>
+    <!-- ============================================
+        BOTÓN FLOTANTE DE WHATSAPP
+        ============================================ -->
+    <a href="https://wa.me/573052214935?text=Hola,%20necesito%20asesoría%20legal" class="whatsapp-btn" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="tooltip">¿Necesitas ayuda?</span>
+    </a>
+
+
+
+<!-- ============================================
+    HEADER / MENÚ DE NAVEGACIÓN
+    ============================================ -->
+<header class="header">
+    <div class="contenedor header-contenido">
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="imagenes/logotipo.jpeg" alt="Logo Bufete Cristian Cano" id="logo-imagen">
+        </div>
+
+        <!-- MENÚ PRINCIPAL PARA ESCRITORIO -->
+        <nav class="nav-desktop">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- MENÚ HAMBURGUESA (SOLO PARA MÓVIL) -->
+        <div class="hamburger-container">
+            <button class="hamburger-btn" id="hamburgerBtn" aria-label="Abrir menú de servicios">
+                <span class="hamburger-icon">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </span>
+                <span class="hamburger-label">Menú</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- MENÚ DESPLEGABLE (FUERA DEL CONTENEDOR PARA MEJOR POSICIONAMIENTO) -->
+    <div class="hamburger-menu" id="hamburgerMenu">
+        <div class="menu-header">
+            <h3><i class="fas fa-gavel"></i> Nuestros Servicios</h3>
+            <p class="menu-subtitle">Áreas de especialización legal</p>
+        </div>
+        
+        <ul class="menu-list">
+            <li>
+                <a href="#servicios" class="menu-item" data-service="familia">
+                    <div class="menu-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="menu-content">
+                        <h4>Derecho de Familia</h4>
+                        <p>Separación, divorcio, custodia, alimentos</p>
+                    </div>
+                    <div class="menu-arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </a>
+            </li>
+            
+            <li>
+                <a href="#servicios" class="menu-item" data-service="laboral">
+                    <div class="menu-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="menu-content">
+                        <h4>Derecho Laboral</h4>
+                        <p>Asesoría empresarial, litigio laboral</p>
+                    </div>
+                    <div class="menu-arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </a>
+            </li>
+            
+            <li>
+                <a href="#servicios" class="menu-item" data-service="civil">
+                    <div class="menu-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <div class="menu-content">
+                        <h4>Derecho Civil</h4>
+                        <p>Contratos, cobranza, inmobiliario</p>
+                    </div>
+                    <div class="menu-arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </a>
+            </li>
+            
+            <li>
+                <a href="#servicios" class="menu-item" data-service="corporativo">
+                    <div class="menu-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="menu-content">
+                        <h4>Derecho Corporativo</h4>
+                        <p>Constitución de sociedades, recuperación</p>
+                    </div>
+                    <div class="menu-arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        
+        <div class="menu-footer">
+            <a href="#contacto" class="menu-cta">
+                <i class="fas fa-paper-plane"></i>
+                Solicitar Consulta Personalizada
+            </a>
+        </div>
+    </div>
+
+    <!-- OVERLAY PARA CERRAR -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+</header>
+
+
+
+ 
+
+    <!-- ============================================
+        SECCIÓN INICIO / PORTADA CON CARRUSEL
+        ============================================ -->
+    <section class="portada" id="inicio">
+        <!-- CARRUSEL DE IMÁGENES -->
+        <div class="carrusel">
+            <!-- IMAGEN 1 - REEMPLAZAR "img/carrusel1.jpg" -->
+            <div class="slide activo">
+                <img src="imagenes/abogado principal.jpeg" alt="Oficina legal moderna">
+            </div>
+            <!-- IMAGEN 2 - REEMPLAZAR "img/carrusel2.jpg" -->
+            <div class="slide">
+                <img src="imagenes/abogado suplente.jpeg" alt="Libros de leyes y justicia">
+            </div>
+            <!-- IMAGEN 3 - REEMPLAZAR "img/carrusel3.jpg" -->
+            <div class="slide">
+                <img src="imagenes/abogado principal 3.jpeg" alt="Reunión con cliente">
+            </div>
+            
+            <!-- CONTROLES DEL CARRUSEL -->
+            <button class="carrusel-btn prev" aria-label="Imagen anterior">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carrusel-btn next" aria-label="Siguiente imagen">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <!-- INDICADORES -->
+            <div class="indicadores">
+                <span class="indicador activo" data-index="0"></span>
+                <span class="indicador" data-index="1"></span>
+                <span class="indicador" data-index="2"></span>
+            </div>
+        </div>
+
+        <!-- CAPA CON TEXTO SOBRE CARRUSEL -->
+        <div class="carrusel-capa">
+            <div class="contenedor">
+                <h2 class="titulo-portada">La justicia Se Honra <br> Cuando El Derecho se Ejerce Con Integridad</h2>
+                <p class="texto-portada">
+                    Comprometidos con la defensa responsable y técnica del derecho.
+                </p>
+                <div class="portada-botones">
+                    <a href="#servicios" class="btn">Ver Servicios</a>
+                    <a href="#contacto" class="btn btn-contacto">Consultar Ahora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+        SECCIÓN NOSOTROS / INFORMACIÓN DEL BUFETE
+        ============================================ -->
+    <section class="nosotros" id="nosotros">
+        <div class="contenedor">
+            <p class="subtitulo">Nuestra Filosofía</p>
+            <h2 class="titulo-seccion">Bufete Cristian Cano</h2>
+            
+            <div class="nosotros-contenido">
+                <!-- INFORMACIÓN PRINCIPAL -->
+                <div class="nosotros-info">
+                    <h3>Quiénes Somos</h3>
+                    <p>
+                        Soy Cristian Cano, abogado experto dedicado al vasto y crucial campo del Derecho Privado.
+                        A lo largo de mi carrera, he consolidado una práctica integral que abarca el Derecho Civil, 
+                        el Derecho Laboral y el Derecho Corporativo. Este enfoque me permite ofrecer una asesoría 
+                        jurídica amplia, profunda y multifacética.
+                    </p>
+                    <p>
+                        En cada caso, mis principios son la base de mi servicio: la transparencia en la comunicación, 
+                        el estricto apego a la legalidad, la diligencia en la ejecución de los procesos y un profundo 
+                        compromiso con el resultado. Mi objetivo es claro y más allá del litigio siempre busco implementar 
+                        la solución jurídica más beneficiosa y sostenible para mis clientes.
+                    </p>
+                </div>
+
+                <!-- MISIÓN Y VISIÓN -->
+                <div class="mision-vision">
+                    <div class="card-mv">
+                        <div class="icono-mv">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h4>Misión</h4>
+                        <p>
+                            Resolver conflictos de alto nivel relacionados con temas legales. Tenemos años de experiencia 
+                            representando a clientes y empresas a nivel nacional en ciudades como Medellín, Cartagena, 
+                            Barrancabermeja, Cali y Bogotá.
+                        </p>
+                        <p class="valores">
+                            <strong>Valores Corporativos:</strong> Transparencia, Diligencia, Compromiso y Legalidad.
+                        </p>
+                    </div>
+                    
+                    <div class="card-mv">
+                        <div class="icono-mv">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h4>Visión</h4>
+                        <p>
+                            Ser el bufete de referencia en Derecho Privado, reconocido por nuestra excelencia, 
+                            innovación en soluciones legales y compromiso inquebrantable con la justicia y los 
+                            derechos de nuestros clientes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================================
+                TARJETAS DE LOS ABOGADOS
+                ============================================ -->
+            <div class="abogados-titulo">
+                <h3>Nuestro Equipo de trabajo </h3>
+                <p>Profesionales comprometidos con su caso</p>
+            </div>
+            
+         <!-- TARJETA DE CRISTIAN CANO -->
+<div class="tarjeta-abogado">
+    <div class="abogado-imagen">
+        <img src="imagenes/abogado relieve1.jpeg" alt="Abogado Cristian Cano">
+    </div>
+    
+    <div class="abogado-info">
+        <h4>Cristian Cano</h4>
+        <span class="abogado-cargo">Abogado Principal</span>
+        
+        <p class="abogado-descripcion">
+            Especialista en Derecho Privado con amplia experiencia en litigio estratégico 
+            y asesoría legal integral para personas y empresas.
+        </p>
+        
+        <div class="especialidades-container">
+            <h5>Áreas de Especialización:</h5>
+            <div class="especialidades-list">
+                <span>Derecho Civil</span>
+                <span>Derecho Laboral</span>
+                <span>Derecho Corporativo</span>
+            </div>
+        </div>
+        
+        <a href="#contacto" class="btn btn-pequeno">Contactar</a>
+    </div>
+</div>
+
+<!-- TARJETA DE MARÍA RODRÍGUEZ -->
+<div class="tarjeta-abogado">
+    <div class="abogado-imagen">
+        <img src="imagenes/gerente administrativo.jpeg" alt="Abogada María Rodríguez">
+    </div>
+    
+    <div class="abogado-info">
+        <h4>Roberto vega </h4>
+        <span class="abogado-cargo">Gerente Administrativo </span>
+        
+        <p class="abogado-descripcion">
+            Lidera la estructura operativa y administrativa de la Empresa, garantizando una optimización y excelente servicios entre el abogado y el cliente, logrando una comunicación asertiva dentro de la gestión y procesos internos que se llevan a cabo dentro de nuestra organización
+        </p>
+        
+        
+        
+        <a href="#contacto" class="btn btn-pequeno">Contactar</a>
+    </div>
+</div>
+            
+
+
+
+
+    <!-- ============================================
+        SECCIÓN SERVICIOS / PORTAFOLIO
+        ============================================ -->
+    <section class="servicios" id="servicios">
+        <div class="contenedor">
+            <p class="subtitulo">Áreas de Especialización</p>
+            <h2 class="titulo-seccion">Nuestros Portafolio de Servicios </h2>
+            <p class="descripcion-seccion">
+                Ofrecemos asesoría integral en las principales ramas del Derecho Privado, 
+                con un enfoque personalizado y resultados efectivos.
+            </p>
+
+            <!-- TARJETAS DE SERVICIOS -->
+            <div class="tarjetas-servicios">
+                <!-- SERVICIO 1: DERECHO DE FAMILIA -->
+                <div class="tarjeta-servicio">
+                    <div class="servicio-icono">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Derecho de Familia</h3>
+                    <p class="servicio-descripcion">
+                        Acompañamiento legal sensible y efectivo en los momentos más importantes de la vida personal.
+                    </p>
+                    <div class="servicio-detalles">
+                        <h4>Servicios Ofrecidos:</h4>
+                        <ul>
+                            <li><strong>Separación y Divorcio:</strong> Divorcio de mutuo acuerdo (exprés) y contencioso.</li>
+                            <li><strong>Régimen de Alimentos:</strong> Solicitud, fijación, aumento, reducción y exoneración de cuotas alimentarias.</li>
+                            <li><strong>Custodia y Visitas:</strong> Custodia y cuidado personal de menores. Regulación de visitas.</li>
+                            <li><strong>Uniones Maritales:</strong> Declaración y disolución de la unión marital de hecho.</li>
+                            <li><strong>Sucesiones:</strong> Trámites de sucesión (testada e intestada) ante notaría o judicialmente.</li>
+                            <li><strong>Otros:</strong> Adjudicación de apoyo, filiación y violencia intrafamiliar.</li>
+                        </ul>
+                    </div>
+                    <a href="#contacto" class="btn-servicio">Consultar <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- SERVICIO 2: DERECHO LABORAL -->
+                <div class="tarjeta-servicio">
+                    <div class="servicio-icono">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Derecho Laboral</h3>
+                    <p class="servicio-descripcion">
+                        Asesoría completa para empleados y empleadores, garantizando cumplimiento normativo y protección de derechos.
+                    </p>
+                    <div class="servicio-detalles">
+                        <h4>Áreas de Actuación:</h4>
+                        <ul>
+                            <li><strong>Asesoría Empresarial:</strong> Contratos, Reglamento Interno de Trabajo, procesos disciplinarios.</li>
+                            <li><strong>Litigio Laboral:</strong> Representación en demandas por despidos injustificados, etc.</li>
+                            <li><strong>Prestaciones Sociales:</strong> Liquidación y reclamación de salarios, prestaciones, vacaciones.</li>
+                            <li><strong>Seguridad Social:</strong> Asesoría en pensiones (vejez, invalidez, sobrevivientes).</li>
+                            <li><strong>Riesgos Laborales:</strong> Accidentes de trabajo, enfermedades laborales.</li>
+                            <li><strong>Acompañamiento:</strong> Calificación de pérdida de capacidad laboral.</li>
+                        </ul>
+                    </div>
+                    <a href="#contacto" class="btn-servicio">Consultar <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- SERVICIO 3: DERECHO CIVIL -->
+                <div class="tarjeta-servicio">
+                    <div class="servicio-icono">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Derecho Civil</h3>
+                    <p class="servicio-descripcion">
+                        Defensa de derechos patrimoniales y personales en las relaciones entre particulares.
+                    </p>
+                    <div class="servicio-detalles">
+                        <h4>Servicios Incluidos:</h4>
+                        <ul>
+                            <li><strong>Contratos:</strong> Elaboración y revisión de contratos civiles (compraventa, arrendamiento, mutuo).</li>
+                            <li><strong>Procesos Posesorios:</strong> Trámites de pertenencia (prescripción adquisitiva de dominio).</li>
+                            <li><strong>Cobranza Judicial:</strong> Procesos ejecutivos para cobro de obligaciones (letras, pagarés, cheques).</li>
+                            <li><strong>Derecho Inmobiliario:</strong> Estudio de títulos, saneamiento de propiedad, deslinde y amojonamiento.</li>
+                            <li><strong>Arrendamiento:</strong> Procesos de restitución de inmueble arrendado.</li>
+                        </ul>
+                    </div>
+                    <a href="#contacto" class="btn-servicio">Consultar <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- SERVICIO 4: DERECHO CORPORATIVO -->
+                <div class="tarjeta-servicio">
+                    <div class="servicio-icono">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Derecho Corporativo y Comercial</h3>
+                    <p class="servicio-descripcion">
+                        Acompañamiento integral para constitución, operación y crecimiento legal de su empresa.
+                    </p>
+                    <div class="servicio-detalles">
+                        <h4>Especialidades:</h4>
+                        <ul>
+                            <li><strong>Constitución de Sociedades:</strong> Asesoría en elección de tipo societario (SAS, Ltda., etc.).</li>
+                            <li><strong>Recuperación Empresarial:</strong> Procesos de insolvencia, reorganización y liquidación empresarial.</li>
+                            <li><strong>Contratos Comerciales:</strong> Elaboración y revisión de todo tipo de contratos mercantiles.</li>
+                            <li><strong>Asesoría Corporativa:</strong> Gobierno corporativo, cumplimiento normativo, fusiones y adquisiciones.</li>
+                            <li><strong>Propiedad Intelectual:</strong> Registro de marcas, patentes y protección de activos intangibles.</li>
+                        </ul>
+                    </div>
+                    <a href="#contacto" class="btn-servicio">Consultar <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+        SECCIÓN CONTACTO / FORMULARIO
+        ============================================ -->
+    <section class="contacto" id="contacto">
+        <div class="contenedor">
+            <p class="subtitulo">Estamos para Ayudarte</p>
+            <h2 class="titulo-seccion">Contacto</h2>
+            
+            <div class="contacto-contenido">
+                <!-- INFORMACIÓN DE CONTACTO -->
+                <div class="contacto-info">
+                    <h3>Información de Contacto</h3>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>305 221 49 35</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Correo Electrónico</h4>
+                            <p>notificaciones@abogadocristiancano.com</p>
+                            <p>cristiancano957@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Dirección</h4>
+                            <p>Carrera 52 número 50 - 25</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horario de Atención</h4>
+                            <p>Lunes a Viernes: 8:00 AM - 6:00 PM</p>
+                            <p>Sábados: 9:00 AM - 1:00 PM</p>
+                        </div>
+                    </div>
+                    
+                    <!-- REDES SOCIALES -->
+                    <div class="redes-contacto">
+                        <h4>Síguenos en Redes</h4>
+                        <div class="redes-icons">
+                            <a href="https://www.instagram.com/abogadocristiancano" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/@abogadocristiancan" target="_blank"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://www.facebook.com/share/1BjzULbHk7/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FORMULARIO DE CONTACTO -->
+                <div class="formulario-contacto">
+                    <h3>Consulta Legal</h3>
+                    <p>Complete el formulario y nos pondremos en contacto en menos de 24 horas.</p>
+
+                    <form id="formContacto" action="https://formsubmit.co/cristiancano957@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="📋 Nueva Consulta Legal desde el Sitio Web">
+                           <input type="hidden" name="_captcha" value="false">
+                          <input type="text" name="_honey" style="display:none"> 
+
+                        <div class="form-grupo">
+                            <label for="nombre">Nombre *</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                            <div class="error-msg" id="errorNombre"></div>
+                        </div>
+                        
+                        <div class="form-grupo">
+                            <label for="apellido">Apellido *</label>
+                            <input type="text" id="apellido" name="apellido" required>
+                            <div class="error-msg" id="errorApellido"></div>
+                        </div>
+                        
+                        <div class="form-grupo">
+                            <label for="cedula">Número de Cédula *</label>
+                            <input type="number" id="cedula" name="cedula" required >
+                            <div class="error-msg" id="errorCedula"></div>
+                        </div>
+                        
+                        <div class="form-grupo">
+                            <label for="rama">Rama del Derecho *</label>
+                            <select id="rama" name="rama" required>
+                                <option value="">Seleccione una opción</option>
+                                <option value="familia">Derecho de Familia</option>
+                                <option value="laboral">Derecho Laboral</option>
+                                <option value="civil">Derecho Civil</option>
+                                <option value="corporativo">Derecho Corporativo y Comercial</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                            <div class="error-msg" id="errorRama"></div>
+                        </div>
+                        
+                        <div class="form-grupo">
+                            <label for="caso">Describa su caso brevemente *</label>
+                            <textarea id="caso" name="caso" rows="5" maxlength="500" required></textarea>
+                            <div class="contador-caracteres">
+                                <span id="caracteresRestantes">500</span> caracteres restantes
+                            </div>
+                            <div class="error-msg" id="errorCaso"></div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-enviar">
+                            <i class="fas fa-paper-plane"></i> Enviar Consulta
+                        </button>
+                        
+                        <div class="mensaje-exito" id="mensajeExito">
+                            ¡Consulta enviada exitosamente! Nos contactaremos pronto.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+        FOOTER / PIE DE PÁGINA
+        ============================================ -->
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="footer-contenido">
+                <!-- LOGO FOOTER -->
+                <div class="footer-logo">
+                    <div class="logo">
+
+                        <div class="logo-texto">
+                            <h3>Cristian Cano</h3>
+                            <p>Abogado Especialista en Derecho Privado</p>
+                        </div>
+                   
+
+                         </div>
+                    <p class="footer-descripcion">
+                        Ofrecemos asesoría jurídica integral con diligencia y compromiso.
+                    </p>
+                </div>
+
+                <!-- ENLACES RÁPIDOS -->
+                <div class="footer-enlaces">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- SERVICIOS FOOTER -->
+                <div class="footer-servicios">
+                    <h4>Nuestros Servicios</h4>
+                    <ul>
+                        <li><a href="#servicios">Derecho de Familia</a></li>
+                        <li><a href="#servicios">Derecho Laboral</a></li>
+                        <li><a href="#servicios">Derecho Civil</a></li>
+                        <li><a href="#servicios">Derecho Corporativo</a></li>
+                    </ul>
+                </div>
+
+                <!-- CONTACTO FOOTER -->
+                <div class="footer-contacto">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-phone"></i> 305 221 49 35</p>
+                    <p><i class="fas fa-envelope"></i> notificaciones@abogadocristiancano.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Carrera 52 #50-25</p>
+                    
+                    <div class="footer-redes">
+                        <a href="https://www.instagram.com/abogadocristiancano" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@abogadocristiancan" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.facebook.com/share/1BjzULbHk7/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- COPYRIGHT -->
+            <div class="footer-copyright">
+                <p>&copy; 2025 Bufete Cristian Cano. Todos los derechos reservados.</p>
+                <p>Desarrollado con excelencia para nuestros clientes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+        SCRIPTS
+        ============================================ -->
+    <script src="script.js"></script>
+</body>
+</html>
